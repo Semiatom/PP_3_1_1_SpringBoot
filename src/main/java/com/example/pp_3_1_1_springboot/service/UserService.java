@@ -1,9 +1,10 @@
-package com.example.pp_3_1_1_sprongboot.service;
+package com.example.pp_3_1_1_springboot.service;
 
-import com.example.pp_3_1_1_sprongboot.model.User;
-import com.example.pp_3_1_1_sprongboot.repository.UserRepository;
+import com.example.pp_3_1_1_springboot.model.User;
+import com.example.pp_3_1_1_springboot.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -25,10 +26,10 @@ public class UserService {
         return userRepository.getOne(id);
     }
 
+
     public void saveUser(User user) {
         userRepository.save(user);
     }
-
     public void deleteUser(int id) {
         userRepository.deleteById(id);
     }

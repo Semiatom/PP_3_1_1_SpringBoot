@@ -1,4 +1,4 @@
-package com.example.pp_3_1_1_sprongboot.model;
+package com.example.pp_3_1_1_springboot.model;
 
 import lombok.Data;
 import javax.persistence.*;
